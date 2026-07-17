@@ -107,39 +107,14 @@ The maximum LTV ratios permitted are...
 ## Pipeline
 
 ```text
-PDF
- │
- ▼
-Extract Text
- │
- ▼
-Clean Text
- │
- ▼
-Chunk Text
- │
- ▼
-Generate Embeddings
- │
- ▼
-Store in ChromaDB
- │
- ▼
-Semantic Search
+1-PDF
+2-Extract Text
+3-Clean Text
+4-Chunk Text
+5-Generate Embeddings
+6-Store in ChromaDB
+7-Semantic Search
 ```
 
 
 
-## Learning Objectives
-
-This project demonstrates how to:
-
-- Process unstructured PDF documents
-- Build a vector database
-- Generate semantic embeddings
-- Perform semantic search
-- Understand the indexing stage of a Retrieval-Augmented Generation (RAG) system
-
-## License
-
-This project is for educational purposes.
