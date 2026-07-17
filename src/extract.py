@@ -1,7 +1,6 @@
-import pymupdf
-from clean import clean_text
 
-#creating a function that 1. take the pdf file path 2. return the text that in the file
+
+# creating a function that takes the PDF file path and returns its text
 def extract_text(pdf_path: str) -> str:
     """
     Extract all text from a PDF file.
@@ -13,16 +12,8 @@ def extract_text(pdf_path: str) -> str:
     all_text = ""
 
     for page in doc:
-        all_text += page.get_text() #extract the text from each page and save it in the variable
+        all_text += page.get_text()
 
     doc.close()
 
     return all_text
-
-
-if __name__ == "__main__":
-    text = extract_text("data/fannie_mae.pdf")
-    cleaned_text = clean_text(text)
-
-    print("\nFirst 2000 characters:\n")
-    print(cleaned_text[:2000])
