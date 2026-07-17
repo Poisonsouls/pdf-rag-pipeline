@@ -11,29 +11,6 @@ A Retrieval Augmented Generation (RAG) data pipeline built with Python. This pro
 - Store embeddings in a local ChromaDB vector database
 - Perform semantic search using natural language queries
 
-## Project Structure
-
-```text
-pdf-rag-pipeline/
-│
-├── data/
-│   └── fannie_mae.pdf
-│
-├── chroma_db/
-│
-├── src/
-│   ├── extract.py
-│   ├── clean.py
-│   ├── chunk.py
-│   ├── embed.py
-│   ├── store.py
-│   ├── search.py
-│   ├── index.py
-│   └── query.py
-│
-├── pyproject.toml
-└── README.md
-```
 
 ## Technologies Used
 
