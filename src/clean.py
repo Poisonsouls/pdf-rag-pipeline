@@ -11,7 +11,7 @@ def clean_text(text: str) -> str:
  # Remove standalone page numbers
     text = re.sub(r"\n\s*\d+\s*\n", "\n", text)
 
-    # Remove repeated spaces (وليس الأسطر)
+    # Remove repeated spaces 
     text = re.sub(r"[ \t]+", " ", text)
 
     # Remove repeated blank lines
