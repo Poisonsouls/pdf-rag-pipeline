@@ -1,6 +1,9 @@
 
 
 # creating a function that takes the PDF file path and returns its text
+import pymupdf
+
+
 def extract_text(pdf_path: str) -> str:
     """
     Extract all text from a PDF file.
