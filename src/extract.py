@@ -24,5 +24,5 @@ if __name__ == "__main__":
     text = extract_text("data/fannie_mae.pdf")
     cleaned_text = clean_text(text)
 
-    print("\nFirst 1000 characters:\n")
+    print("\nFirst 2000 characters:\n")
     print(cleaned_text[:2000])
